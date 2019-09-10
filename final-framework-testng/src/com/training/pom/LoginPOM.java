@@ -6,14 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPOM {
-	private WebDriver driver; 
-	
 	public LoginPOM(WebDriver driver) {
-		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="login")
+	@FindBy(id="login")                                               
 	private WebElement userName; 
 	
 	@FindBy(id="password")
